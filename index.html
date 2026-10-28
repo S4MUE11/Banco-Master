@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco Master</title>
+</head>
+<body>
+  <h1>Banco Master</h1>
+
+  <p>Saldo atual: <strong id="saldo">R$ 22.222,00</strong></p>
+
+  <label for="operacao">Operação:</label>
+  <select id="operacao">
+    <option value="consultar">Consultar saldo</option>
+    <option value="depositar">Depositar</option>
+    <option value="sacar">Sacar</option>
+    <option value="extrato">Ver extrato</option>
+  </select>
+
+  <label for="valor">Valor (R$):</label>
+  <input id="valor" type="number" step="1" min="1" placeholder="Digite um valor">
+  <button id="executar" type="button">Executar operação</button>
+
+  <h2>Resultado</h2>
+  <pre id="resultado" aria-live="polite">Escolha uma operação para começar.</pre>
+
+  <script src="script.js"></script>
+</body>
+</html>
